@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Music Player</h1>
+      <div class="player-card">
+        <div class="image-handler">
+          <div class="image-container">
+            <img class="music-img" alt="" />
+          </div>
+        </div>
+
+        <div class="display-name-container">
+          <p class="song-name"></p>
+          <p class="artist"></p>
+        </div>
+
+        <div class="time-line-container">
+          <div class="time-container">
+            <p class="current-time">00:00</p>
+            <p class="duration">00:00</p>
+          </div>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <div class="buttons-container">
+          <button id="playback" class="replay">
+            <i class="fa fa-reply"></i>
+          </button>
+          <button id="next-and-previos" class="previos-music">
+            <i class="fa fa-backward"></i>
+          </button>
+          <button id="play-btn" class="play-music">
+            <i id="playing" class="fa fa-play"></i>
+          </button>
+          <button id="next-and-previos" class="next-music">
+            <i class="fa fa-forward"></i>
+          </button>
+          <button id="playback" class="playback-rate">
+            <p id="rate">1x</p>
+          </button>
+        </div>
+      </div>
+      <h4 class="copy-right">create by sajad mehri</h4>
+    </div>
+    <audio></audio>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
